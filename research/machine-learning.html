@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning Research - ThinkBit Edge Corp</title>
+    <meta name="description" content="Explore our cutting-edge machine learning research including deep learning, neural networks, and reinforcement learning at ThinkBit Edge Corp.">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="../manifest.json">
+    <meta name="theme-color" content="#6366f1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="ThinkBit Edge">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+    <link rel="apple-touch-icon" href="../assets/images/icon-192x192.png">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fredericmirindi.github.io/thinkbit4/research/machine-learning.html">
+    <meta property="og:title" content="Machine Learning Research - ThinkBit Edge Corp">
+    <meta property="og:description" content="Explore our cutting-edge machine learning research including deep learning, neural networks, and reinforcement learning.">
+    <meta property="og:image" content="https://fredericmirindi.github.io/thinkbit4/assets/images/ml-research.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://fredericmirindi.github.io/thinkbit4/research/machine-learning.html">
+    <meta property="twitter:title" content="Machine Learning Research - ThinkBit Edge Corp">
+    <meta property="twitter:description" content="Explore our cutting-edge machine learning research including deep learning, neural networks, and reinforcement learning.">
+    <meta property="twitter:image" content="https://fredericmirindi.github.io/thinkbit4/assets/images/ml-research.jpg">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 40 40" fill="none">
+                        <path d="M20 5L35 15V25L20 35L5 25V15L20 5Z" stroke="currentColor" stroke-width="2" fill="url(#logoGradient)"/>
+                        <circle cx="20" cy="20" r="6" fill="currentColor"/>
+                        <defs>
+                            <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#00d4ff"/>
+                                <stop offset="100%" stop-color="#9333ea"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <a href="../index.html" class="logo-text">ThinkBit<span class="edge">Edge</span></a>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../index.html#about" class="nav-link">About</a>
+                <a href="../index.html#research" class="nav-link active">Research</a>
+                <a href="../index.html#ai-lab" class="nav-link">AI Lab</a>
+                <a href="../index.html#data-center" class="nav-link">Data Center</a>
+                <a href="../index.html#team" class="nav-link">Team</a>
+                <a href="../index.html#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+                </button>
+                <button class="cta-button" onclick="location.href='../index.html#contact'">Get Started</button>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="research-hero">
+            <div class="container">
+                <nav class="breadcrumb" data-aos="fade-up">
+                    <a href="../index.html">Home</a>
+                    <span>/</span>
+                    <a href="../index.html#research">Research</a>
+                    <span>/</span>
+                    <span>Machine Learning</span>
+                </nav>
+                
+                <div class="research-hero-content">
+                    <div class="hero-badge" data-aos="fade-up">
+                        <span class="badge-icon">🧠</span>
+                        <span>Advanced Machine Learning Research</span>
+                    </div>
+                    
+                    <h1 class="research-title" data-aos="fade-up" data-aos-delay="100">
+                        Machine Learning
+                        <span class="gradient-text">Research Lab</span>
+                    </h1>
+                    
+                    <p class="research-description" data-aos="fade-up" data-aos-delay="200">
+                        Our Machine Learning research lab pioneers cutting-edge algorithms for pattern recognition, 
+                        predictive analytics, and automated decision making. We explore deep learning architectures, 
+                        neural networks, and reinforcement learning to solve complex real-world problems.
+                    </p>
+                    
+                    <div class="research-stats" data-aos="fade-up" data-aos-delay="300">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="150">0</div>
+                            <div class="stat-label">ML Models Deployed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="25">0</div>
+                            <div class="stat-label">Active Projects</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="50">0</div>
+                            <div class="stat-label">Research Papers</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="12">0</div>
+                            <div class="stat-label">PhD Students</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Areas -->
+        <section class="research-areas-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Research Focus Areas</h2>
+                    <p class="section-description">
+                        Our machine learning research spans multiple domains, from fundamental algorithm development 
+                        to practical applications in various industries.
+                    </p>
+                </div>
+                
+                <div class="research-grid">
+                    <div class="research-area-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="area-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <h3>Deep Learning</h3>
+                        <p>Advanced neural network architectures including CNNs, RNNs, Transformers, and custom architectures for complex pattern recognition tasks.</p>
+                        <div class="area-features">
+                            <span>Convolutional Neural Networks</span>
+                            <span>Transformer Architectures</span>
+                            <span>Generative Adversarial Networks</span>
+                            <span>Attention Mechanisms</span>
+                        </div>
+                    </div>
+                    
+                    <div class="research-area-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="area-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3>Reinforcement Learning</h3>
+                        <p>Developing intelligent agents that learn optimal decision-making strategies through interaction with dynamic environments.</p>
+                        <div class="area-features">
+                            <span>Q-Learning</span>
+                            <span>Policy Gradient Methods</span>
+                            <span>Multi-Agent Systems</span>
+                            <span>Deep Q-Networks</span>
+                        </div>
+                    </div>
+                    
+                    <div class="research-area-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="area-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <circle cx="12" cy="12" r="3"/>
+                                <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"/>
+                            </svg>
+                        </div>
+                        <h3>AutoML & Neural Architecture Search</h3>
+                        <p>Automated machine learning systems that design and optimize neural network architectures without human intervention.</p>
+                        <div class="area-features">
+                            <span>Architecture Optimization</span>
+                            <span>Hyperparameter Tuning</span>
+                            <span>Evolutionary Algorithms</span>
+                            <span>Neural Architecture Search</span>
+                        </div>
+                    </div>
+                    
+                    <div class="research-area-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="area-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>
+                                <polyline points="3.27,6.96 12,12.01 20.73,6.96"/>
+                                <line x1="12" y1="22.08" x2="12" y2="12"/>
+                            </svg>
+                        </div>
+                        <h3>Federated Learning</h3>
+                        <p>Distributed machine learning approaches that enable training across decentralized data sources while preserving privacy.</p>
+                        <div class="area-features">
+                            <span>Privacy-Preserving ML</span>
+                            <span>Distributed Training</span>
+                            <span>Edge Computing</span>
+                            <span>Secure Aggregation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Current Projects -->
+        <section class="projects-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Current Research Projects</h2>
+                    <p class="section-description">
+                        Explore our ongoing machine learning research initiatives that are pushing the boundaries 
+                        of artificial intelligence and automation.
+                    </p>
+                </div>
+                
+                <div class="projects-grid">
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-status active">Active</div>
+                        <div class="project-header">
+                            <h3>Adaptive Neural Architecture Search</h3>
+                            <div class="project-funding">$2.5M NSF Grant</div>
+                        </div>
+                        <p class="project-description">
+                            Developing evolutionary algorithms for automatically designing optimal neural network 
+                            architectures for specific tasks and datasets.
+                        </p>
+                        <div class="project-details">
+                            <div class="detail-item">
+                                <strong>Duration:</strong> 2023-2026
+                            </div>
+                            <div class="detail-item">
+                                <strong>Team Size:</strong> 8 researchers
+                            </div>
+                            <div class="detail-item">
+                                <strong>Publications:</strong> 12 papers
+                            </div>
+                        </div>
+                        <div class="project-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 75%"></div>
+                            </div>
+                            <span>75% Complete</span>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">AutoML</span>
+                            <span class="tag">Neural Architecture Search</span>
+                            <span class="tag">Evolutionary Algorithms</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-status research">Research</div>
+                        <div class="project-header">
+                            <h3>Continual Learning Systems</h3>
+                            <div class="project-funding">$1.8M Industry Partnership</div>
+                        </div>
+                        <p class="project-description">
+                            Creating machine learning models that can continuously learn from new data without 
+                            forgetting previously acquired knowledge.
+                        </p>
+                        <div class="project-details">
+                            <div class="detail-item">
+                                <strong>Duration:</strong> 2024-2027
+                            </div>
+                            <div class="detail-item">
+                                <strong>Team Size:</strong> 6 researchers
+                            </div>
+                            <div class="detail-item">
+                                <strong>Publications:</strong> 8 papers
+                            </div>
+                        </div>
+                        <div class="project-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 45%"></div>
+                            </div>
+                            <span>45% Complete</span>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">Continual Learning</span>
+                            <span class="tag">Memory Systems</span>
+                            <span class="tag">Catastrophic Forgetting</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-status planning">Planning</div>
+                        <div class="project-header">
+                            <h3>Quantum-Enhanced ML</h3>
+                            <div class="project-funding">$3.2M DoE Grant</div>
+                        </div>
+                        <p class="project-description">
+                            Investigating quantum computing advantages for machine learning algorithms, focusing on 
+                            quantum neural networks and variational quantum algorithms.
+                        </p>
+                        <div class="project-details">
+                            <div class="detail-item">
+                                <strong>Duration:</strong> 2025-2028
+                            </div>
+                            <div class="detail-item">
+                                <strong>Team Size:</strong> 10 researchers
+                            </div>
+                            <div class="detail-item">
+                                <strong>Publications:</strong> 3 papers
+                            </div>
+                        </div>
+                        <div class="project-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 15%"></div>
+                            </div>
+                            <span>15% Complete</span>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">Quantum Computing</span>
+                            <span class="tag">Variational Algorithms</span>
+                            <span class="tag">Quantum Neural Networks</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications & Resources -->
+        <section class="publications-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Recent Publications & Resources</h2>
+                    <p class="section-description">
+                        Access our latest research findings, publications, and open-source contributions to the 
+                        machine learning community.
+                    </p>
+                </div>
+                
+                <div class="publications-grid">
+                    <div class="publication-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="publication-type">Journal Paper</div>
+                        <h3>"Evolutionary Neural Architecture Search for Edge Computing"</h3>
+                        <p class="publication-authors">Chen, S., Johnson, M., Patel, A., Liu, D.</p>
+                        <p class="publication-venue">Nature Machine Intelligence, 2024</p>
+                        <div class="publication-metrics">
+                            <span class="metric">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M8 17l4 4 4-4m-4-5v9"/>
+                                    <path d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"/>
+                                </svg>
+                                245 Downloads
+                            </span>
+                            <span class="metric">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"/>
+                                    <rect x="8" y="2" width="8" height="4" rx="1" ry="1"/>
+                                </svg>
+                                32 Citations
+                            </span>
+                        </div>
+                        <div class="publication-tags">
+                            <span class="tag">Neural Architecture Search</span>
+                            <span class="tag">Edge Computing</span>
+                        </div>
+                    </div>
+                    
+                    <div class="publication-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="publication-type">Conference Paper</div>
+                        <h3>"Federated Learning with Differential Privacy Guarantees"</h3>
+                        <p class="publication-authors">Patel, A., Chen, S., Johnson, M.</p>
+                        <p class="publication-venue">NeurIPS 2024</p>
+                        <div class="publication-metrics">
+                            <span class="metric">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M8 17l4 4 4-4m-4-5v9"/>
+                                    <path d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"/>
+                                </svg>
+                                189 Downloads
+                            </span>
+                            <span class="metric">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"/>
+                                    <rect x="8" y="2" width="8" height="4" rx="1" ry="1"/>
+                                </svg>
+                                28 Citations
+                            </span>
+                        </div>
+                        <div class="publication-tags">
+                            <span class="tag">Federated Learning</span>
+                            <span class="tag">Privacy</span>
+                        </div>
+                    </div>
+                    
+                    <div class="publication-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="publication-type">Open Source</div>
+                        <h3>"AutoML-Edge: Automated ML for Edge Devices"</h3>
+                        <p class="publication-authors">ThinkBit Edge Research Team</p>
+                        <p class="publication-venue">GitHub Repository</p>
+                        <div class="publication-metrics">
+                            <span class="metric">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                                </svg>
+                                1.2k Stars
+                            </span>
+                            <span class="metric">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"/>
+                                    <rect x="8" y="2" width="8" height="4" rx="1" ry="1"/>
+                                </svg>
+                                342 Forks
+                            </span>
+                        </div>
+                        <div class="publication-tags">
+                            <span class="tag">Open Source</span>
+                            <span class="tag">AutoML</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Navigation -->
+        <section class="research-navigation">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Explore Other Research Areas</h2>
+                <div class="research-nav-grid">
+                    <a href="big-data-analytics.html" class="research-nav-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="nav-icon">📊</div>
+                        <h3>Big Data Analytics</h3>
+                        <p>Scalable systems for processing massive datasets</p>
+                    </a>
+                    
+                    <a href="natural-language-processing.html" class="research-nav-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="nav-icon">🗣️</div>
+                        <h3>Natural Language Processing</h3>
+                        <p>Advanced language models and text analysis</p>
+                    </a>
+                    
+                    <a href="computer-vision.html" class="research-nav-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="nav-icon">👁️</div>
+                        <h3>Computer Vision</h3>
+                        <p>Image recognition and visual understanding</p>
+                    </a>
+                    
+                    <a href="quantum-computing.html" class="research-nav-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="nav-icon">⚛️</div>
+                        <h3>Quantum Computing</h3>
+                        <p>Next-generation computing paradigms</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <svg viewBox="0 0 40 40" fill="none">
+                                <path d="M20 5L35 15V25L20 35L5 25V15L20 5Z" stroke="currentColor" stroke-width="2" fill="url(#footerLogoGradient)"/>
+                                <circle cx="20" cy="20" r="6" fill="currentColor"/>
+                                <defs>
+                                    <linearGradient id="footerLogoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#00d4ff"/>
+                                        <stop offset="100%" stop-color="#9333ea"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <span>ThinkBit<span class="edge">Edge</span></span>
+                    </div>
+                    <p>Pioneering the future of AI and data engineering through innovative research and world-class education.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="GitHub">💻</a>
+                        <a href="#" aria-label="YouTube">📺</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Research</h4>
+                    <ul>
+                        <li><a href="machine-learning.html">Machine Learning</a></li>
+                        <li><a href="big-data-analytics.html">Big Data Analytics</a></li>
+                        <li><a href="natural-language-processing.html">Natural Language Processing</a></li>
+                        <li><a href="computer-vision.html">Computer Vision</a></li>
+                        <li><a href="quantum-computing.html">Quantum Computing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Publications</a></li>
+                        <li><a href="#">Datasets</a></li>
+                        <li><a href="#">Open Source Tools</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">API Access</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="../index.html#contact">Get In Touch</a></li>
+                        <li><a href="mailto:research@thinkbitedge.com">research@thinkbitedge.com</a></li>
+                        <li><a href="tel:+12045550123">+1 (204) 555-0123</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2025 ThinkBit Edge Corp. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
