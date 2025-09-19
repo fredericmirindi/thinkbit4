@@ -5,9 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ThinkBit Edge Corp - University Center of Data Analysis & AI</title>
     <meta name="description" content="Leading University Center for Data Analysis and Artificial Intelligence research, engineering, and innovation. Cutting-edge solutions for the future of data.">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#6366f1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="ThinkBit Edge">
+    
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Favicons -->
     <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="apple-touch-icon" href="assets/images/icon-192x192.png">
+    
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://fredericmirindi.github.io/thinkbit4/">
@@ -21,6 +37,46 @@
     <meta property="twitter:title" content="ThinkBit Edge Corp - AI & Data Analysis Center">
     <meta property="twitter:description" content="Leading University Center for Data Analysis and Artificial Intelligence research, engineering, and innovation.">
     <meta property="twitter:image" content="https://fredericmirindi.github.io/thinkbit4/assets/images/og-image.jpg">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "ThinkBit Edge Corp",
+      "alternateName": "University Center of Data Analysis & AI",
+      "description": "Leading University Center for Data Analysis and Artificial Intelligence research, engineering, and innovation.",
+      "url": "https://fredericmirindi.github.io/thinkbit4/",
+      "logo": "https://fredericmirindi.github.io/thinkbit4/assets/images/logo.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Innovation Drive",
+        "addressLocality": "Winnipeg",
+        "addressRegion": "MB",
+        "postalCode": "R3T 2N2",
+        "addressCountry": "CA"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-204-555-0123",
+        "contactType": "customer service",
+        "email": "info@thinkbitedge.com"
+      },
+      "sameAs": [
+        "https://github.com/fredericmirindi/thinkbit4"
+      ],
+      "knowsAbout": [
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Data Engineering",
+        "Deep Learning",
+        "Natural Language Processing",
+        "Computer Vision",
+        "Quantum Computing",
+        "Big Data Analytics"
+      ]
+    }
+    </script>
 </head>
 <body>
     <!-- Loading Screen -->
@@ -98,686 +154,689 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero-section">
-        <div class="hero-background">
-            <div class="neural-grid"></div>
-            <div class="floating-particles"></div>
-        </div>
-        
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-badge" data-aos="fade-up">
-                    <span class="badge-icon">🚀</span>
-                    <span>Leading Innovation in AI & Data Engineering</span>
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-background">
+                <div class="neural-grid"></div>
+                <div class="floating-particles"></div>
+            </div>
+            
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge" data-aos="fade-up">
+                        <span class="badge-icon">🚀</span>
+                        <span>Leading Innovation in AI & Data Engineering</span>
+                    </div>
+                    
+                    <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+                        University Center of
+                        <span class="gradient-text">Data Analysis</span>
+                        <br>& <span class="gradient-text">Artificial Intelligence</span>
+                    </h1>
+                    
+                    <p class="hero-description" data-aos="fade-up" data-aos-delay="200">
+                        Pioneering the future of data engineering through cutting-edge AI research, 
+                        innovative solutions, and world-class education. Join us in shaping 
+                        tomorrow's intelligent systems.
+                    </p>
+                    
+                    <div class="hero-actions" data-aos="fade-up" data-aos-delay="300">
+                        <button class="primary-button" onclick="location.href='#ai-lab'">
+                            <span>Explore AI Lab</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                        <button class="secondary-button" onclick="playDemoVideo()">
+                            <svg class="play-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <polygon points="5,3 19,12 5,21"/>
+                            </svg>
+                            <span>Watch Demo</span>
+                        </button>
+                    </div>
+                    
+                    <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="500">0</div>
+                            <div class="stat-label">AI Models Deployed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="50">0</div>
+                            <div class="stat-label">TB Data Processed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="25">0</div>
+                            <div class="stat-label">Research Projects</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="100">0</div>
+                            <div class="stat-label">Publications</div>
+                        </div>
+                    </div>
                 </div>
                 
-                <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
-                    University Center of
-                    <span class="gradient-text">Data Analysis</span>
-                    <br>& <span class="gradient-text">Artificial Intelligence</span>
-                </h1>
-                
-                <p class="hero-description" data-aos="fade-up" data-aos-delay="200">
-                    Pioneering the future of data engineering through cutting-edge AI research, 
-                    innovative solutions, and world-class education. Join us in shaping 
-                    tomorrow's intelligent systems.
-                </p>
-                
-                <div class="hero-actions" data-aos="fade-up" data-aos-delay="300">
-                    <button class="primary-button" onclick="location.href='#ai-lab'">
-                        <span>Explore AI Lab</span>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
-                    </button>
-                    <button class="secondary-button" onclick="playDemoVideo()">
-                        <svg class="play-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                            <polygon points="5,3 19,12 5,21"/>
-                        </svg>
-                        <span>Watch Demo</span>
-                    </button>
-                </div>
-                
-                <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
-                    <div class="stat-item">
-                        <div class="stat-number" data-target="500">0</div>
-                        <div class="stat-label">AI Models Deployed</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number" data-target="50">0</div>
-                        <div class="stat-label">TB Data Processed</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number" data-target="25">0</div>
-                        <div class="stat-label">Research Projects</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number" data-target="100">0</div>
-                        <div class="stat-label">Publications</div>
+                <div class="hero-visual" data-aos="fade-left" data-aos-delay="200">
+                    <div class="ai-visualization">
+                        <div class="main-node">
+                            <div class="node-core"></div>
+                            <div class="node-ring"></div>
+                        </div>
+                        <div class="data-streams">
+                            <div class="stream stream-1"></div>
+                            <div class="stream stream-2"></div>
+                            <div class="stream stream-3"></div>
+                        </div>
+                        <div class="satellite-nodes">
+                            <div class="satellite-node node-1"></div>
+                            <div class="satellite-node node-2"></div>
+                            <div class="satellite-node node-3"></div>
+                            <div class="satellite-node node-4"></div>
+                        </div>
                     </div>
                 </div>
             </div>
             
-            <div class="hero-visual" data-aos="fade-left" data-aos-delay="200">
-                <div class="ai-visualization">
-                    <div class="main-node">
-                        <div class="node-core"></div>
-                        <div class="node-ring"></div>
-                    </div>
-                    <div class="data-streams">
-                        <div class="stream stream-1"></div>
-                        <div class="stream stream-2"></div>
-                        <div class="stream stream-3"></div>
-                    </div>
-                    <div class="satellite-nodes">
-                        <div class="satellite-node node-1"></div>
-                        <div class="satellite-node node-2"></div>
-                        <div class="satellite-node node-3"></div>
-                        <div class="satellite-node node-4"></div>
-                    </div>
-                </div>
+            <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="600">
+                <div class="scroll-text">Scroll to explore</div>
+                <div class="scroll-arrow"></div>
             </div>
-        </div>
-        
-        <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="600">
-            <div class="scroll-text">Scroll to explore</div>
-            <div class="scroll-arrow"></div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <div class="section-badge">About ThinkBit Edge</div>
-                <h2 class="section-title">Driving Innovation in AI & Data Engineering</h2>
-                <p class="section-description">
-                    We are a leading university research center dedicated to advancing the frontiers 
-                    of artificial intelligence and data engineering through groundbreaking research, 
-                    education, and industry collaboration.
-                </p>
-            </div>
-            
-            <div class="about-content">
-                <div class="about-features">
-                    <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
-                        <div class="feature-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-                            </svg>
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <div class="section-badge">About ThinkBit Edge</div>
+                    <h2 class="section-title">Driving Innovation in AI & Data Engineering</h2>
+                    <p class="section-description">
+                        We are a leading university research center dedicated to advancing the frontiers 
+                        of artificial intelligence and data engineering through groundbreaking research, 
+                        education, and industry collaboration.
+                    </p>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-features">
+                        <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                                </svg>
+                            </div>
+                            <h3>Advanced Infrastructure</h3>
+                            <p>State-of-the-art data centers with quantum computing capabilities and high-performance computing clusters.</p>
                         </div>
-                        <h3>Advanced Infrastructure</h3>
-                        <p>State-of-the-art data centers with quantum computing capabilities and high-performance computing clusters.</p>
-                    </div>
-                    
-                    <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
-                        <div class="feature-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <circle cx="12" cy="12" r="3"/>
-                                <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"/>
-                            </svg>
+                        
+                        <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <circle cx="12" cy="12" r="3"/>
+                                    <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"/>
+                                </svg>
+                            </div>
+                            <h3>AI Research Excellence</h3>
+                            <p>Cutting-edge research in machine learning, deep learning, natural language processing, and computer vision.</p>
                         </div>
-                        <h3>AI Research Excellence</h3>
-                        <p>Cutting-edge research in machine learning, deep learning, natural language processing, and computer vision.</p>
-                    </div>
-                    
-                    <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
-                        <div class="feature-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
-                                <circle cx="9" cy="7" r="4"/>
-                                <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
-                            </svg>
+                        
+                        <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+                                </svg>
+                            </div>
+                            <h3>Expert Faculty</h3>
+                            <p>World-renowned researchers and industry experts leading groundbreaking projects and mentoring the next generation.</p>
                         </div>
-                        <h3>Expert Faculty</h3>
-                        <p>World-renowned researchers and industry experts leading groundbreaking projects and mentoring the next generation.</p>
-                    </div>
-                    
-                    <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
-                        <div class="feature-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <polygon points="13,2 3,14 12,14 11,22 21,10 12,10 13,2"/>
-                            </svg>
+                        
+                        <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <polygon points="13,2 3,14 12,14 11,22 21,10 12,10 13,2"/>
+                                </svg>
+                            </div>
+                            <h3>Industry Partnerships</h3>
+                            <p>Strategic collaborations with leading tech companies, startups, and research institutions worldwide.</p>
                         </div>
-                        <h3>Industry Partnerships</h3>
-                        <p>Strategic collaborations with leading tech companies, startups, and research institutions worldwide.</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Research Section -->
-    <section id="research" class="research-section">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <div class="section-badge">Research Areas</div>
-                <h2 class="section-title">Pioneering AI Research</h2>
-                <p class="section-description">
-                    Our multidisciplinary research spans across various domains of artificial intelligence 
-                    and data engineering, pushing the boundaries of what's possible.
-                </p>
+        <!-- Research Section -->
+        <section id="research" class="research-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <div class="section-badge">Research Areas</div>
+                    <h2 class="section-title">Pioneering AI Research</h2>
+                    <p class="section-description">
+                        Our multidisciplinary research spans across various domains of artificial intelligence 
+                        and data engineering, pushing the boundaries of what's possible.
+                    </p>
+                </div>
+                
+                <div class="research-grid">
+                    <div class="research-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="research-header">
+                            <div class="research-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <h3>Machine Learning</h3>
+                        </div>
+                        <p>Advanced algorithms for pattern recognition, predictive analytics, and automated decision making.</p>
+                        <div class="research-tags">
+                            <span class="tag">Deep Learning</span>
+                            <span class="tag">Neural Networks</span>
+                            <span class="tag">Reinforcement Learning</span>
+                        </div>
+                    </div>
+                    
+                    <div class="research-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="research-header">
+                            <div class="research-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>
+                                    <polyline points="3.27,6.96 12,12.01 20.73,6.96"/>
+                                    <line x1="12" y1="22.08" x2="12" y2="12"/>
+                                </svg>
+                            </div>
+                            <h3>Big Data Analytics</h3>
+                        </div>
+                        <p>Scalable systems for processing, analyzing, and extracting insights from massive datasets.</p>
+                        <div class="research-tags">
+                            <span class="tag">Real-time Processing</span>
+                            <span class="tag">Data Mining</span>
+                            <span class="tag">Distributed Systems</span>
+                        </div>
+                    </div>
+                    
+                    <div class="research-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="research-header">
+                            <div class="research-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/>
+                                    <line x1="4" y1="22" x2="4" y2="15"/>
+                                </svg>
+                            </div>
+                            <h3>Natural Language Processing</h3>
+                        </div>
+                        <p>Advanced language models, sentiment analysis, and conversational AI systems.</p>
+                        <div class="research-tags">
+                            <span class="tag">Transformers</span>
+                            <span class="tag">Language Models</span>
+                            <span class="tag">Text Analytics</span>
+                        </div>
+                    </div>
+                    
+                    <div class="research-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="research-header">
+                            <div class="research-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                    <circle cx="8.5" cy="8.5" r="1.5"/>
+                                    <polyline points="21,15 16,10 5,21"/>
+                                </svg>
+                            </div>
+                            <h3>Computer Vision</h3>
+                        </div>
+                        <p>Image recognition, object detection, and visual understanding systems for various applications.</p>
+                        <div class="research-tags">
+                            <span class="tag">Image Processing</span>
+                            <span class="tag">Object Detection</span>
+                            <span class="tag">3D Vision</span>
+                        </div>
+                    </div>
+                    
+                    <div class="research-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="research-header">
+                            <div class="research-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M12 2L22 8.5V15.5L12 22L2 15.5V8.5L12 2Z"/>
+                                    <path d="M12 22V12"/>
+                                    <path d="M2 8.5L12 12L22 8.5"/>
+                                </svg>
+                            </div>
+                            <h3>Quantum Computing</h3>
+                        </div>
+                        <p>Quantum algorithms, quantum machine learning, and next-generation computing paradigms.</p>
+                        <div class="research-tags">
+                            <span class="tag">Quantum ML</span>
+                            <span class="tag">Quantum Algorithms</span>
+                            <span class="tag">Hybrid Systems</span>
+                        </div>
+                    </div>
+                    
+                    <div class="research-card" data-aos="fade-up" data-aos-delay="600">
+                        <div class="research-header">
+                            <div class="research-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+                                    <path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/>
+                                    <line x1="12" y1="17" x2="12.01" y2="17"/>
+                                </svg>
+                            </div>
+                            <h3>AI Ethics & Safety</h3>
+                        </div>
+                        <p>Responsible AI development, bias detection, and ethical frameworks for AI systems.</p>
+                        <div class="research-tags">
+                            <span class="tag">Explainable AI</span>
+                            <span class="tag">Fairness</span>
+                            <span class="tag">Privacy</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-            <div class="research-grid">
-                <div class="research-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="research-header">
-                        <div class="research-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                            </svg>
-                        </div>
-                        <h3>Machine Learning</h3>
-                    </div>
-                    <p>Advanced algorithms for pattern recognition, predictive analytics, and automated decision making.</p>
-                    <div class="research-tags">
-                        <span class="tag">Deep Learning</span>
-                        <span class="tag">Neural Networks</span>
-                        <span class="tag">Reinforcement Learning</span>
-                    </div>
-                </div>
-                
-                <div class="research-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="research-header">
-                        <div class="research-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>
-                                <polyline points="3.27,6.96 12,12.01 20.73,6.96"/>
-                                <line x1="12" y1="22.08" x2="12" y2="12"/>
-                            </svg>
-                        </div>
-                        <h3>Big Data Analytics</h3>
-                    </div>
-                    <p>Scalable systems for processing, analyzing, and extracting insights from massive datasets.</p>
-                    <div class="research-tags">
-                        <span class="tag">Real-time Processing</span>
-                        <span class="tag">Data Mining</span>
-                        <span class="tag">Distributed Systems</span>
-                    </div>
-                </div>
-                
-                <div class="research-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="research-header">
-                        <div class="research-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/>
-                                <line x1="4" y1="22" x2="4" y2="15"/>
-                            </svg>
-                        </div>
-                        <h3>Natural Language Processing</h3>
-                    </div>
-                    <p>Advanced language models, sentiment analysis, and conversational AI systems.</p>
-                    <div class="research-tags">
-                        <span class="tag">Transformers</span>
-                        <span class="tag">Language Models</span>
-                        <span class="tag">Text Analytics</span>
-                    </div>
-                </div>
-                
-                <div class="research-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="research-header">
-                        <div class="research-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-                                <circle cx="8.5" cy="8.5" r="1.5"/>
-                                <polyline points="21,15 16,10 5,21"/>
-                            </svg>
-                        </div>
-                        <h3>Computer Vision</h3>
-                    </div>
-                    <p>Image recognition, object detection, and visual understanding systems for various applications.</p>
-                    <div class="research-tags">
-                        <span class="tag">Image Processing</span>
-                        <span class="tag">Object Detection</span>
-                        <span class="tag">3D Vision</span>
-                    </div>
-                </div>
-                
-                <div class="research-card" data-aos="fade-up" data-aos-delay="500">
-                    <div class="research-header">
-                        <div class="research-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <path d="M12 2L22 8.5V15.5L12 22L2 15.5V8.5L12 2Z"/>
-                                <path d="M12 22V12"/>
-                                <path d="M2 8.5L12 12L22 8.5"/>
-                            </svg>
-                        </div>
-                        <h3>Quantum Computing</h3>
-                    </div>
-                    <p>Quantum algorithms, quantum machine learning, and next-generation computing paradigms.</p>
-                    <div class="research-tags">
-                        <span class="tag">Quantum ML</span>
-                        <span class="tag">Quantum Algorithms</span>
-                        <span class="tag">Hybrid Systems</span>
-                    </div>
-                </div>
-                
-                <div class="research-card" data-aos="fade-up" data-aos-delay="600">
-                    <div class="research-header">
-                        <div class="research-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
-                                <path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/>
-                                <line x1="12" y1="17" x2="12.01" y2="17"/>
-                            </svg>
-                        </div>
-                        <h3>AI Ethics & Safety</h3>
-                    </div>
-                    <p>Responsible AI development, bias detection, and ethical frameworks for AI systems.</p>
-                    <div class="research-tags">
-                        <span class="tag">Explainable AI</span>
-                        <span class="tag">Fairness</span>
-                        <span class="tag">Privacy</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- AI Lab Section -->
-    <section id="ai-lab" class="ai-lab-section">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <div class="section-badge">AI Laboratory</div>
-                <h2 class="section-title">State-of-the-Art AI Lab</h2>
-                <p class="section-description">
-                    Experience our cutting-edge AI laboratory equipped with the latest hardware, 
-                    software, and research tools for breakthrough innovations.
-                </p>
-            </div>
-            
-            <div class="lab-showcase">
-                <div class="lab-tabs" data-aos="fade-up" data-aos-delay="100">
-                    <button class="lab-tab active" data-tab="hardware">Hardware</button>
-                    <button class="lab-tab" data-tab="software">Software</button>
-                    <button class="lab-tab" data-tab="projects">Projects</button>
+        <!-- AI Lab Section -->
+        <section id="ai-lab" class="ai-lab-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <div class="section-badge">AI Laboratory</div>
+                    <h2 class="section-title">State-of-the-Art AI Lab</h2>
+                    <p class="section-description">
+                        Experience our cutting-edge AI laboratory equipped with the latest hardware, 
+                        software, and research tools for breakthrough innovations.
+                    </p>
                 </div>
                 
-                <div class="lab-content">
-                    <div class="lab-panel active" id="hardware-panel" data-aos="fade-up" data-aos-delay="200">
-                        <div class="panel-grid">
-                            <div class="equipment-card">
-                                <div class="equipment-icon">🖥️</div>
-                                <h4>GPU Clusters</h4>
-                                <p>NVIDIA A100 and H100 GPUs for intensive deep learning workloads</p>
-                                <div class="specs">
-                                    <span>40GB VRAM</span>
-                                    <span>6912 CUDA Cores</span>
-                                </div>
-                            </div>
-                            
-                            <div class="equipment-card">
-                                <div class="equipment-icon">⚡</div>
-                                <h4>Quantum Processors</h4>
-                                <p>IBM Quantum Network access and quantum simulation capabilities</p>
-                                <div class="specs">
-                                    <span>127 Qubits</span>
-                                    <span>Quantum Volume 64</span>
-                                </div>
-                            </div>
-                            
-                            <div class="equipment-card">
-                                <div class="equipment-icon">💾</div>
-                                <h4>High-Performance Storage</h4>
-                                <p>Petabyte-scale distributed storage systems for big data</p>
-                                <div class="specs">
-                                    <span>10 PB Capacity</span>
-                                    <span>100 GB/s Throughput</span>
-                                </div>
-                            </div>
-                        </div>
+                <div class="lab-showcase">
+                    <div class="lab-tabs" data-aos="fade-up" data-aos-delay="100">
+                        <button class="lab-tab active" data-tab="hardware">Hardware</button>
+                        <button class="lab-tab" data-tab="software">Software</button>
+                        <button class="lab-tab" data-tab="projects">Projects</button>
                     </div>
                     
-                    <div class="lab-panel" id="software-panel" data-aos="fade-up" data-aos-delay="200">
-                        <div class="panel-grid">
-                            <div class="software-card">
-                                <div class="software-icon">🧠</div>
-                                <h4>ML Frameworks</h4>
-                                <p>TensorFlow, PyTorch, JAX, and custom neural architectures</p>
-                                <div class="tech-stack">
-                                    <span>TensorFlow 2.x</span>
-                                    <span>PyTorch Lightning</span>
-                                </div>
-                            </div>
-                            
-                            <div class="software-card">
-                                <div class="software-icon">📊</div>
-                                <h4>Data Platforms</h4>
-                                <p>Apache Spark, Hadoop, Kubernetes for scalable data processing</p>
-                                <div class="tech-stack">
-                                    <span>Spark 3.x</span>
-                                    <span>K8s Orchestration</span>
-                                </div>
-                            </div>
-                            
-                            <div class="software-card">
-                                <div class="software-icon">🔧</div>
-                                <h4>Development Tools</h4>
-                                <p>JupyterHub, MLflow, and collaborative research environments</p>
-                                <div class="tech-stack">
-                                    <span>Multi-user Jupyter</span>
-                                    <span>Experiment Tracking</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="lab-panel" id="projects-panel" data-aos="fade-up" data-aos-delay="200">
-                        <div class="projects-grid">
-                            <div class="project-card">
-                                <div class="project-status">Active</div>
-                                <h4>Neural Architecture Search</h4>
-                                <p>Automated design of optimal neural network architectures using evolutionary algorithms.</p>
-                                <div class="project-progress">
-                                    <div class="progress-bar">
-                                        <div class="progress-fill" style="width: 75%"></div>
+                    <div class="lab-content">
+                        <div class="lab-panel active" id="hardware-panel" data-aos="fade-up" data-aos-delay="200">
+                            <div class="panel-grid">
+                                <div class="equipment-card">
+                                    <div class="equipment-icon">🖥️</div>
+                                    <h4>GPU Clusters</h4>
+                                    <p>NVIDIA A100 and H100 GPUs for intensive deep learning workloads</p>
+                                    <div class="specs">
+                                        <span>40GB VRAM</span>
+                                        <span>6912 CUDA Cores</span>
                                     </div>
-                                    <span>75% Complete</span>
                                 </div>
-                            </div>
-                            
-                            <div class="project-card">
-                                <div class="project-status">Research</div>
-                                <h4>Quantum-Classical Hybrid ML</h4>
-                                <p>Investigating quantum advantage in machine learning using hybrid quantum-classical algorithms.</p>
-                                <div class="project-progress">
-                                    <div class="progress-bar">
-                                        <div class="progress-fill" style="width: 45%"></div>
+                                
+                                <div class="equipment-card">
+                                    <div class="equipment-icon">⚡</div>
+                                    <h4>Quantum Processors</h4>
+                                    <p>IBM Quantum Network access and quantum simulation capabilities</p>
+                                    <div class="specs">
+                                        <span>127 Qubits</span>
+                                        <span>Quantum Volume 64</span>
                                     </div>
-                                    <span>45% Complete</span>
+                                </div>
+                                
+                                <div class="equipment-card">
+                                    <div class="equipment-icon">💾</div>
+                                    <h4>High-Performance Storage</h4>
+                                    <p>Petabyte-scale distributed storage systems for big data</p>
+                                    <div class="specs">
+                                        <span>10 PB Capacity</span>
+                                        <span>100 GB/s Throughput</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="lab-panel" id="software-panel" data-aos="fade-up" data-aos-delay="200">
+                            <div class="panel-grid">
+                                <div class="software-card">
+                                    <div class="software-icon">🧠</div>
+                                    <h4>ML Frameworks</h4>
+                                    <p>TensorFlow, PyTorch, JAX, and custom neural architectures</p>
+                                    <div class="tech-stack">
+                                        <span>TensorFlow 2.x</span>
+                                        <span>PyTorch Lightning</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="software-card">
+                                    <div class="software-icon">📊</div>
+                                    <h4>Data Platforms</h4>
+                                    <p>Apache Spark, Hadoop, Kubernetes for scalable data processing</p>
+                                    <div class="tech-stack">
+                                        <span>Spark 3.x</span>
+                                        <span>K8s Orchestration</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="software-card">
+                                    <div class="software-icon">🔧</div>
+                                    <h4>Development Tools</h4>
+                                    <p>JupyterHub, MLflow, and collaborative research environments</p>
+                                    <div class="tech-stack">
+                                        <span>Multi-user Jupyter</span>
+                                        <span>Experiment Tracking</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="lab-panel" id="projects-panel" data-aos="fade-up" data-aos-delay="200">
+                            <div class="projects-grid">
+                                <div class="project-card">
+                                    <div class="project-status">Active</div>
+                                    <h4>Neural Architecture Search</h4>
+                                    <p>Automated design of optimal neural network architectures using evolutionary algorithms.</p>
+                                    <div class="project-progress">
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 75%"></div>
+                                        </div>
+                                        <span>75% Complete</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="project-card">
+                                    <div class="project-status">Research</div>
+                                    <h4>Quantum-Classical Hybrid ML</h4>
+                                    <p>Investigating quantum advantage in machine learning using hybrid quantum-classical algorithms.</p>
+                                    <div class="project-progress">
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 45%"></div>
+                                        </div>
+                                        <span>45% Complete</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Data Center Section -->
-    <section id="data-center" class="data-center-section">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <div class="section-badge">Infrastructure</div>
-                <h2 class="section-title">Next-Generation Data Center</h2>
-                <p class="section-description">
-                    Our state-of-the-art data center provides the computational backbone for 
-                    advanced AI research and large-scale data processing.
-                </p>
-            </div>
-            
-            <div class="datacenter-dashboard" data-aos="fade-up" data-aos-delay="200">
-                <div class="dashboard-header">
-                    <h3>Real-Time System Monitoring</h3>
-                    <div class="status-indicators">
-                        <div class="status-item">
-                            <div class="status-dot green"></div>
-                            <span>All Systems Operational</span>
-                        </div>
-                    </div>
+        <!-- Data Center Section -->
+        <section id="data-center" class="data-center-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <div class="section-badge">Infrastructure</div>
+                    <h2 class="section-title">Next-Generation Data Center</h2>
+                    <p class="section-description">
+                        Our state-of-the-art data center provides the computational backbone for 
+                        advanced AI research and large-scale data processing.
+                    </p>
                 </div>
                 
-                <div class="metrics-grid">
-                    <div class="metric-card">
-                        <div class="metric-header">
-                            <h4>CPU Usage</h4>
-                            <span class="metric-value" id="cpu-usage">73%</span>
-                        </div>
-                        <div class="metric-chart">
-                            <canvas id="cpu-chart" width="300" height="100"></canvas>
-                        </div>
-                    </div>
-                    
-                    <div class="metric-card">
-                        <div class="metric-header">
-                            <h4>Memory Usage</h4>
-                            <span class="metric-value" id="memory-usage">68%</span>
-                        </div>
-                        <div class="metric-chart">
-                            <canvas id="memory-chart" width="300" height="100"></canvas>
+                <div class="datacenter-dashboard" data-aos="fade-up" data-aos-delay="200">
+                    <div class="dashboard-header">
+                        <h3>Real-Time System Monitoring</h3>
+                        <div class="status-indicators">
+                            <div class="status-item">
+                                <div class="status-dot green"></div>
+                                <span>All Systems Operational</span>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="metric-card">
-                        <div class="metric-header">
-                            <h4>Network I/O</h4>
-                            <span class="metric-value" id="network-io">2.3 GB/s</span>
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <div class="metric-header">
+                                <h4>CPU Usage</h4>
+                                <span class="metric-value" id="cpu-usage">73%</span>
+                            </div>
+                            <div class="metric-chart">
+                                <canvas id="cpu-chart" width="300" height="100"></canvas>
+                            </div>
                         </div>
-                        <div class="metric-chart">
-                            <canvas id="network-chart" width="300" height="100"></canvas>
+                        
+                        <div class="metric-card">
+                            <div class="metric-header">
+                                <h4>Memory Usage</h4>
+                                <span class="metric-value" id="memory-usage">68%</span>
+                            </div>
+                            <div class="metric-chart">
+                                <canvas id="memory-chart" width="300" height="100"></canvas>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="metric-card">
-                        <div class="metric-header">
-                            <h4>Storage Usage</h4>
-                            <span class="metric-value" id="storage-usage">42%</span>
+                        
+                        <div class="metric-card">
+                            <div class="metric-header">
+                                <h4>Network I/O</h4>
+                                <span class="metric-value" id="network-io">2.3 GB/s</span>
+                            </div>
+                            <div class="metric-chart">
+                                <canvas id="network-chart" width="300" height="100"></canvas>
+                            </div>
                         </div>
-                        <div class="metric-chart">
-                            <canvas id="storage-chart" width="300" height="100"></canvas>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="datacenter-features">
-                    <div class="feature-item">
-                        <div class="feature-icon">🔋</div>
-                        <div class="feature-content">
-                            <h4>Green Energy</h4>
-                            <p>100% renewable energy powered infrastructure</p>
-                        </div>
-                    </div>
-                    
-                    <div class="feature-item">
-                        <div class="feature-icon">🛡️</div>
-                        <div class="feature-content">
-                            <h4>Security</h4>
-                            <p>Military-grade security and compliance standards</p>
-                        </div>
-                    </div>
-                    
-                    <div class="feature-item">
-                        <div class="feature-icon">📡</div>
-                        <div class="feature-content">
-                            <h4>Connectivity</h4>
-                            <p>Ultra-low latency global network connections</p>
+                        
+                        <div class="metric-card">
+                            <div class="metric-header">
+                                <h4>Storage Usage</h4>
+                                <span class="metric-value" id="storage-usage">42%</span>
+                            </div>
+                            <div class="metric-chart">
+                                <canvas id="storage-chart" width="300" height="100"></canvas>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="feature-item">
-                        <div class="feature-icon">🔄</div>
-                        <div class="feature-content">
-                            <h4>Scalability</h4>
-                            <p>Auto-scaling infrastructure for dynamic workloads</p>
+                    <div class="datacenter-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">🔋</div>
+                            <div class="feature-content">
+                                <h4>Green Energy</h4>
+                                <p>100% renewable energy powered infrastructure</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">🛡️</div>
+                            <div class="feature-content">
+                                <h4>Security</h4>
+                                <p>Military-grade security and compliance standards</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">📡</div>
+                            <div class="feature-content">
+                                <h4>Connectivity</h4>
+                                <p>Ultra-low latency global network connections</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">🔄</div>
+                            <div class="feature-content">
+                                <h4>Scalability</h4>
+                                <p>Auto-scaling infrastructure for dynamic workloads</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Team Section -->
-    <section id="team" class="team-section">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <div class="section-badge">Our Team</div>
-                <h2 class="section-title">World-Class Experts</h2>
-                <p class="section-description">
-                    Meet our team of renowned researchers, engineers, and innovators 
-                    leading the charge in AI and data engineering.
-                </p>
+        <!-- Team Section -->
+        <section id="team" class="team-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <div class="section-badge">Our Team</div>
+                    <h2 class="section-title">World-Class Experts</h2>
+                    <p class="section-description">
+                        Meet our team of renowned researchers, engineers, and innovators 
+                        leading the charge in AI and data engineering.
+                    </p>
+                </div>
+                
+                <div class="team-grid">
+                    <div class="team-member" data-aos="fade-up" data-aos-delay="100">
+                        <div class="member-avatar">
+                            <div class="avatar-placeholder">DR</div>
+                            <div class="member-status">Online</div>
+                        </div>
+                        <div class="member-info">
+                            <h3>Dr. Sarah Chen</h3>
+                            <p class="member-title">Director of AI Research</p>
+                            <p class="member-bio">Leading expert in deep learning and neural architecture search with 15+ years experience.</p>
+                            <div class="member-social">
+                                <a href="#" aria-label="LinkedIn">💼</a>
+                                <a href="#" aria-label="Twitter">🐦</a>
+                                <a href="#" aria-label="Google Scholar">🎓</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member" data-aos="fade-up" data-aos-delay="200">
+                        <div class="member-avatar">
+                            <div class="avatar-placeholder">MJ</div>
+                            <div class="member-status">Online</div>
+                        </div>
+                        <div class="member-info">
+                            <h3>Prof. Michael Johnson</h3>
+                            <p class="member-title">Head of Data Engineering</p>
+                            <p class="member-bio">Pioneer in distributed systems and big data analytics, author of 100+ research papers.</p>
+                            <div class="member-social">
+                                <a href="#" aria-label="LinkedIn">💼</a>
+                                <a href="#" aria-label="Twitter">🐦</a>
+                                <a href="#" aria-label="Google Scholar">🎓</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member" data-aos="fade-up" data-aos-delay="300">
+                        <div class="member-avatar">
+                            <div class="avatar-placeholder">AP</div>
+                            <div class="member-status">Away</div>
+                        </div>
+                        <div class="member-info">
+                            <h3>Dr. Aisha Patel</h3>
+                            <p class="member-title">Quantum Computing Lead</p>
+                            <p class="member-bio">Quantum algorithm specialist focusing on quantum machine learning applications.</p>
+                            <div class="member-social">
+                                <a href="#" aria-label="LinkedIn">💼</a>
+                                <a href="#" aria-label="Twitter">🐦</a>
+                                <a href="#" aria-label="Google Scholar">🎓</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member" data-aos="fade-up" data-aos-delay="400">
+                        <div class="member-avatar">
+                            <div class="avatar-placeholder">DL</div>
+                            <div class="member-status">Online</div>
+                        </div>
+                        <div class="member-info">
+                            <h3>Dr. David Liu</h3>
+                            <p class="member-title">NLP Research Scientist</p>
+                            <p class="member-bio">Natural language processing expert with focus on transformer architectures and language models.</p>
+                            <div class="member-social">
+                                <a href="#" aria-label="LinkedIn">💼</a>
+                                <a href="#" aria-label="Twitter">🐦</a>
+                                <a href="#" aria-label="Google Scholar">🎓</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-            <div class="team-grid">
-                <div class="team-member" data-aos="fade-up" data-aos-delay="100">
-                    <div class="member-avatar">
-                        <div class="avatar-placeholder">DR</div>
-                        <div class="member-status">Online</div>
-                    </div>
-                    <div class="member-info">
-                        <h3>Dr. Sarah Chen</h3>
-                        <p class="member-title">Director of AI Research</p>
-                        <p class="member-bio">Leading expert in deep learning and neural architecture search with 15+ years experience.</p>
-                        <div class="member-social">
-                            <a href="#" aria-label="LinkedIn">💼</a>
-                            <a href="#" aria-label="Twitter">🐦</a>
-                            <a href="#" aria-label="Google Scholar">🎓</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="team-member" data-aos="fade-up" data-aos-delay="200">
-                    <div class="member-avatar">
-                        <div class="avatar-placeholder">MJ</div>
-                        <div class="member-status">Online</div>
-                    </div>
-                    <div class="member-info">
-                        <h3>Prof. Michael Johnson</h3>
-                        <p class="member-title">Head of Data Engineering</p>
-                        <p class="member-bio">Pioneer in distributed systems and big data analytics, author of 100+ research papers.</p>
-                        <div class="member-social">
-                            <a href="#" aria-label="LinkedIn">💼</a>
-                            <a href="#" aria-label="Twitter">🐦</a>
-                            <a href="#" aria-label="Google Scholar">🎓</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="team-member" data-aos="fade-up" data-aos-delay="300">
-                    <div class="member-avatar">
-                        <div class="avatar-placeholder">AP</div>
-                        <div class="member-status">Away</div>
-                    </div>
-                    <div class="member-info">
-                        <h3>Dr. Aisha Patel</h3>
-                        <p class="member-title">Quantum Computing Lead</p>
-                        <p class="member-bio">Quantum algorithm specialist focusing on quantum machine learning applications.</p>
-                        <div class="member-social">
-                            <a href="#" aria-label="LinkedIn">💼</a>
-                            <a href="#" aria-label="Twitter">🐦</a>
-                            <a href="#" aria-label="Google Scholar">🎓</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="team-member" data-aos="fade-up" data-aos-delay="400">
-                    <div class="member-avatar">
-                        <div class="avatar-placeholder">DL</div>
-                        <div class="member-status">Online</div>
-                    </div>
-                    <div class="member-info">
-                        <h3>Dr. David Liu</h3>
-                        <p class="member-title">NLP Research Scientist</p>
-                        <p class="member-bio">Natural language processing expert with focus on transformer architectures and language models.</p>
-                        <div class="member-social">
-                            <a href="#" aria-label="LinkedIn">💼</a>
-                            <a href="#" aria-label="Twitter">🐦</a>
-                            <a href="#" aria-label="Google Scholar">🎓</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <div class="section-badge">Get In Touch</div>
-                <h2 class="section-title">Let's Collaborate</h2>
-                <p class="section-description">
-                    Ready to push the boundaries of AI and data engineering? 
-                    Connect with us to explore research opportunities and partnerships.
-                </p>
-            </div>
-            
-            <div class="contact-content">
-                <div class="contact-info" data-aos="fade-right" data-aos-delay="100">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
-                                <circle cx="12" cy="10" r="3"/>
-                            </svg>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Visit Us</h4>
-                            <p>University of Technology<br>AI Research Building<br>123 Innovation Drive<br>Winnipeg, MB R3T 2N2</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
-                            </svg>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Call Us</h4>
-                            <p>+1 (204) 555-0123<br>Research Inquiries<br>+1 (204) 555-0124<br>Partnerships</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                                <polyline points="22,6 12,13 2,6"/>
-                            </svg>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Email Us</h4>
-                            <p>info@thinkbitedge.com<br>research@thinkbitedge.com<br>partnerships@thinkbitedge.com</p>
-                        </div>
-                    </div>
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <div class="section-badge">Get In Touch</div>
+                    <h2 class="section-title">Let's Collaborate</h2>
+                    <p class="section-description">
+                        Ready to push the boundaries of AI and data engineering? 
+                        Connect with us to explore research opportunities and partnerships.
+                    </p>
                 </div>
                 
-                <form class="contact-form" data-aos="fade-left" data-aos-delay="200">
-                    <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" name="name" required>
+                <div class="contact-content">
+                    <div class="contact-info" data-aos="fade-right" data-aos-delay="100">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Visit Us</h4>
+                                <p>University of Technology<br>AI Research Building<br>123 Innovation Drive<br>Winnipeg, MB R3T 2N2</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Call Us</h4>
+                                <p>+1 (204) 555-0123<br>Research Inquiries<br>+1 (204) 555-0124<br>Partnerships</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email Us</h4>
+                                <p>info@thinkbitedge.com<br>research@thinkbitedge.com<br>partnerships@thinkbitedge.com</p>
+                            </div>
+                        </div>
                     </div>
                     
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="organization">Organization</label>
-                        <input type="text" id="organization" name="organization">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <select id="subject" name="subject" required>
-                            <option value="">Select a topic</option>
-                            <option value="research">Research Collaboration</option>
-                            <option value="partnership">Industry Partnership</option>
-                            <option value="education">Educational Programs</option>
-                            <option value="consulting">Consulting Services</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    
-                    <button type="submit" class="submit-button">
-                        <span>Send Message</span>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                            <line x1="22" y1="2" x2="11" y2="13"/>
-                            <polygon points="22,2 15,22 11,13 2,9 22,2"/>
-                        </svg>
-                    </button>
-                </form>
+                    <form class="contact-form" data-aos="fade-left" data-aos-delay="200">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="organization">Organization</label>
+                            <input type="text" id="organization" name="organization">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a topic</option>
+                                <option value="research">Research Collaboration</option>
+                                <option value="partnership">Industry Partnership</option>
+                                <option value="education">Educational Programs</option>
+                                <option value="consulting">Consulting Services</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-button">
+                            <span>Send Message</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <line x1="22" y1="2" x2="11" y2="13"/>
+                                <polygon points="22,2 15,22 11,13 2,9 22,2"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
