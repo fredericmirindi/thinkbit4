@@ -1,0 +1,64 @@
+# ThinkBit Edge Corp - University Center of Data Analysis & AI
+# robots.txt for SEO optimization
+
+User-agent: *
+Allow: /
+
+# Allow all crawlers access to CSS and JS files
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/images/
+
+# Allow manifest and service worker
+Allow: /manifest.json
+Allow: /sw.js
+
+# Disallow admin or private areas (if any in the future)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.git/
+
+# Allow common crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# Social media crawlers
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Academic and research crawlers
+User-agent: ia_archiver
+Allow: /
+
+User-agent: Wayback
+Allow: /
+
+# Sitemap location
+Sitemap: https://fredericmirindi.github.io/thinkbit4/sitemap.xml
+
+# Crawl delay for politeness (1 second)
+Crawl-delay: 1
+
+# Host specification
+Host: https://fredericmirindi.github.io
