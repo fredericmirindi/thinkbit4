@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Computing Research - ThinkBit Edge Corp</title>
+    <meta name="description" content="Explore our quantum computing research including quantum algorithms, quantum machine learning, and hybrid systems at ThinkBit Edge Corp.">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="../manifest.json">
+    <meta name="theme-color" content="#6366f1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="ThinkBit Edge">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+    <link rel="apple-touch-icon" href="../assets/images/icon-192x192.png">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fredericmirindi.github.io/thinkbit4/research/quantum-computing.html">
+    <meta property="og:title" content="Quantum Computing Research - ThinkBit Edge Corp">
+    <meta property="og:description" content="Explore our quantum computing research including quantum algorithms, quantum machine learning, and hybrid systems.">
+    <meta property="og:image" content="https://fredericmirindi.github.io/thinkbit4/assets/images/quantum-research.jpg">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 40 40" fill="none">
+                        <path d="M20 5L35 15V25L20 35L5 25V15L20 5Z" stroke="currentColor" stroke-width="2" fill="url(#logoGradient)"/>
+                        <circle cx="20" cy="20" r="6" fill="currentColor"/>
+                        <defs>
+                            <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#00d4ff"/>
+                                <stop offset="100%" stop-color="#9333ea"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <a href="../index.html" class="logo-text">ThinkBit<span class="edge">Edge</span></a>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../index.html#about" class="nav-link">About</a>
+                <a href="../index.html#research" class="nav-link active">Research</a>
+                <a href="../index.html#ai-lab" class="nav-link">AI Lab</a>
+                <a href="../index.html#data-center" class="nav-link">Data Center</a>
+                <a href="../index.html#team" class="nav-link">Team</a>
+                <a href="../index.html#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+                </button>
+                <button class="cta-button" onclick="location.href='../index.html#contact'">Get Started</button>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="research-hero">
+            <div class="container">
+                <nav class="breadcrumb" data-aos="fade-up">
+                    <a href="../index.html">Home</a>
+                    <span>/</span>
+                    <a href="../index.html#research">Research</a>
+                    <span>/</span>
+                    <span>Quantum Computing</span>
+                </nav>
+                
+                <div class="research-hero-content">
+                    <div class="hero-badge" data-aos="fade-up">
+                        <span class="badge-icon">⚛️</span>
+                        <span>Next-Generation Quantum Computing</span>
+                    </div>
+                    
+                    <h1 class="research-title" data-aos="fade-up" data-aos-delay="100">
+                        Quantum Computing
+                        <span class="gradient-text">Research Center</span>
+                    </h1>
+                    
+                    <p class="research-description" data-aos="fade-up" data-aos-delay="200">
+                        Our Quantum Computing research center explores the revolutionary potential of quantum 
+                        systems for solving complex computational problems. We focus on quantum algorithms, 
+                        quantum machine learning, and hybrid quantum-classical systems.
+                    </p>
+                    
+                    <div class="research-stats" data-aos="fade-up" data-aos-delay="300">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="127">0</div>
+                            <div class="stat-label">Qubits Available</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="15">0</div>
+                            <div class="stat-label">Active Projects</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="28">0</div>
+                            <div class="stat-label">Research Papers</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="64">0</div>
+                            <div class="stat-label">Quantum Volume</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Areas -->
+        <section class="research-areas-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Quantum Research Domains</h2>
+                    <p class="section-description">
+                        Our quantum computing research covers fundamental quantum algorithms, 
+                        applications in machine learning, and hybrid classical-quantum systems.
+                    </p>
+                </div>
+                
+                <div class="research-grid">
+                    <div class="research-area-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="area-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M12 2L22 8.5V15.5L12 22L2 15.5V8.5L12 2Z"/>
+                                <path d="M12 22V12"/>
+                                <path d="M2 8.5L12 12L22 8.5"/>
+                            </svg>
+                        </div>
+                        <h3>Quantum Algorithms</h3>
+                        <p>Fundamental quantum algorithms for optimization, search, and simulation problems with exponential speedup potential.</p>
+                        <div class="area-features">
+                            <span>Shor's Algorithm</span>
+                            <span>Grover's Search</span>
+                            <span>Variational Algorithms</span>
+                            <span>Quantum Simulation</span>
+                        </div>
+                    </div>
+                    
+                    <div class="research-area-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="area-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <circle cx="12" cy="12" r="3"/>
+                                <path d="M12 1v6m0 6v6m11-7h-6m-6 0H1m15.5-3.5L19 5l-1.5 1.5M6.5 17.5L5 19l1.5-1.5m0-11L5 5l1.5 1.5m11 11L19 19l-1.5-1.5"/>
+                            </svg>
+                        </div>
+                        <h3>Quantum Machine Learning</h3>
+                        <p>Quantum-enhanced machine learning algorithms that leverage quantum properties for improved learning and inference.</p>
+                        <div class="area-features">
+                            <span>Quantum Neural Networks</span>
+                            <span>Variational Classifiers</span>
+                            <span>Quantum Feature Maps</span>
+                            <span>Quantum Kernels</span>
+                        </div>
+                    </div>
+                    
+                    <div class="research-area-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="area-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M8 2v4l-6 6 6 6v4h8v-4l6-6-6-6V2H8z"/>
+                                <path d="M12 6v12"/>
+                                <path d="M8 12h8"/>
+                            </svg>
+                        </div>
+                        <h3>Hybrid Quantum-Classical Systems</h3>
+                        <p>Innovative architectures combining quantum and classical computing for practical near-term quantum advantage.</p>
+                        <div class="area-features">
+                            <span>NISQ Algorithms</span>
+                            <span>Quantum-Classical Interface</span>
+                            <span>Error Mitigation</span>
+                            <span>Hybrid Optimization</span>
+                        </div>
+                    </div>
+                    
+                    <div class="research-area-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="area-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
+                        </div>
+                        <h3>Quantum Error Correction</h3>
+                        <p>Advanced error correction codes and fault-tolerant quantum computing protocols for reliable quantum computation.</p>
+                        <div class="area-features">
+                            <span>Surface Codes</span>
+                            <span>Logical Qubits</span>
+                            <span>Error Syndrome Detection</span>
+                            <span>Fault-Tolerant Protocols</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quantum Systems -->
+        <section class="quantum-systems-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Quantum Computing Infrastructure</h2>
+                    <p class="section-description">
+                        Our world-class quantum computing infrastructure provides researchers with access 
+                        to cutting-edge quantum hardware and simulation platforms.
+                    </p>
+                </div>
+                
+                <div class="systems-showcase">
+                    <div class="quantum-specs" data-aos="fade-up" data-aos-delay="100">
+                        <div class="spec-header">
+                            <div class="spec-icon">⚛️</div>
+                            <h3>IBM Quantum Network Access</h3>
+                        </div>
+                        <div class="spec-grid">
+                            <div class="spec-item">
+                                <div class="spec-label">Quantum Volume</div>
+                                <div class="spec-value">64</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-label">Qubits</div>
+                                <div class="spec-value">127</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-label">Gate Fidelity</div>
+                                <div class="spec-value">99.9%</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-label">Coherence Time</div>
+                                <div class="spec-value">100 μs</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="simulator-grid" data-aos="fade-up" data-aos-delay="200">
+                        <div class="simulator-card">
+                            <div class="simulator-header">
+                                <div class="simulator-icon">💻</div>
+                                <h4>Quantum Simulators</h4>
+                            </div>
+                            <p>High-performance classical simulators for quantum algorithm development and testing.</p>
+                            <div class="simulator-specs">
+                                <span>Up to 40 qubits simulation</span>
+                                <span>Noise modeling capabilities</span>
+                                <span>Custom gate libraries</span>
+                            </div>
+                        </div>
+                        
+                        <div class="simulator-card">
+                            <div class="simulator-header">
+                                <div class="simulator-icon">🧪</div>
+                                <h4>Development Platforms</h4>
+                            </div>
+                            <p>Integrated development environments for quantum programming and circuit design.</p>
+                            <div class="simulator-specs">
+                                <span>Qiskit Framework</span>
+                                <span>Cirq Integration</span>
+                                <span>Custom Quantum IDEs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Current Projects -->
+        <section class="projects-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Quantum Research Projects</h2>
+                    <p class="section-description">
+                        Explore our groundbreaking quantum computing research projects that are 
+                        advancing the field of quantum information science.
+                    </p>
+                </div>
+                
+                <div class="projects-grid">
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-status active">Active</div>
+                        <div class="project-header">
+                            <h3>Quantum Advantage in Optimization</h3>
+                            <div class="project-funding">$5.1M DoE Quantum Grant</div>
+                        </div>
+                        <p class="project-description">
+                            Investigating quantum algorithms for combinatorial optimization problems 
+                            with applications in logistics, finance, and resource allocation.
+                        </p>
+                        <div class="project-details">
+                            <div class="detail-item">
+                                <strong>Duration:</strong> 2023-2026
+                            </div>
+                            <div class="detail-item">
+                                <strong>Team Size:</strong> 14 researchers
+                            </div>
+                            <div class="detail-item">
+                                <strong>Publications:</strong> 20 papers
+                            </div>
+                        </div>
+                        <div class="project-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 65%"></div>
+                            </div>
+                            <span>65% Complete</span>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">QAOA</span>
+                            <span class="tag">Optimization</span>
+                            <span class="tag">Quantum Advantage</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-status research">Research</div>
+                        <div class="project-header">
+                            <h3>Fault-Tolerant Quantum Computing</h3>
+                            <div class="project-funding">$3.8M NSF Quantum Initiative</div>
+                        </div>
+                        <p class="project-description">
+                            Developing robust quantum error correction protocols and fault-tolerant 
+                            quantum computing architectures for large-scale quantum applications.
+                        </p>
+                        <div class="project-details">
+                            <div class="detail-item">
+                                <strong>Duration:</strong> 2024-2027
+                            </div>
+                            <div class="detail-item">
+                                <strong>Team Size:</strong> 10 researchers
+                            </div>
+                            <div class="detail-item">
+                                <strong>Publications:</strong> 13 papers
+                            </div>
+                        </div>
+                        <div class="project-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 38%"></div>
+                            </div>
+                            <span>38% Complete</span>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">Error Correction</span>
+                            <span class="tag">Fault Tolerance</span>
+                            <span class="tag">Scalability</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-status planning">Planning</div>
+                        <div class="project-header">
+                            <h3>Quantum Internet Protocols</h3>
+                            <div class="project-funding">$4.2M DARPA Grant</div>
+                        </div>
+                        <p class="project-description">
+                            Building the foundation for quantum internet infrastructure through 
+                            quantum communication protocols and entanglement distribution.
+                        </p>
+                        <div class="project-details">
+                            <div class="detail-item">
+                                <strong>Duration:</strong> 2025-2028
+                            </div>
+                            <div class="detail-item">
+                                <strong>Team Size:</strong> 12 researchers
+                            </div>
+                            <div class="detail-item">
+                                <strong>Publications:</strong> 6 papers</div>
+                        </div>
+                        <div class="project-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 25%"></div>
+                            </div>
+                            <span>25% Complete</span>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">Quantum Communication</span>
+                            <span class="tag">Entanglement</span>
+                            <span class="tag">Quantum Networks</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quantum Applications -->
+        <section class="quantum-applications-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Quantum Computing Applications</h2>
+                    <p class="section-description">
+                        Discover how quantum computing is revolutionizing various fields through 
+                        exponential computational advantages and novel algorithmic approaches.
+                    </p>
+                </div>
+                
+                <div class="applications-showcase">
+                    <div class="application-category" data-aos="fade-up" data-aos-delay="100">
+                        <div class="category-header">
+                            <div class="category-icon">🔬</div>
+                            <h3>Scientific Computing</h3>
+                        </div>
+                        <div class="category-items">
+                            <div class="application-item">
+                                <h4>Molecular Simulation</h4>
+                                <p>Quantum simulation of molecular interactions for drug discovery and materials science</p>
+                                <div class="impact-metric">1000x speedup potential</div>
+                            </div>
+                            <div class="application-item">
+                                <h4>Quantum Chemistry</h4>
+                                <p>Accurate modeling of chemical reactions and catalyst design using quantum algorithms</p>
+                                <div class="impact-metric">Chemical accuracy achieved</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="application-category" data-aos="fade-up" data-aos-delay="200">
+                        <div class="category-header">
+                            <div class="category-icon">💰</div>
+                            <h3>Financial Technology</h3>
+                        </div>
+                        <div class="category-items">
+                            <div class="application-item">
+                                <h4>Portfolio Optimization</h4>
+                                <p>Quantum algorithms for optimal asset allocation and risk management strategies</p>
+                                <div class="impact-metric">15% improved returns</div>
+                            </div>
+                            <div class="application-item">
+                                <h4>Fraud Detection</h4>
+                                <p>Quantum machine learning for real-time financial fraud detection and prevention</p>
+                                <div class="impact-metric">98.7% detection rate</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="application-category" data-aos="fade-up" data-aos-delay="300">
+                        <div class="category-header">
+                            <div class="category-icon">🔒</div>
+                            <h3>Cryptography & Security</h3>
+                        </div>
+                        <div class="category-items">
+                            <div class="application-item">
+                                <h4>Quantum Cryptography</h4>
+                                <p>Unbreakable quantum key distribution and secure communication protocols</p>
+                                <div class="impact-metric">Information-theoretic security</div>
+                            </div>
+                            <div class="application-item">
+                                <h4>Post-Quantum Cryptography</h4>
+                                <p>Developing cryptographic systems resistant to quantum computing attacks</p>
+                                <div class="impact-metric">Future-proof security</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quantum Partnerships -->
+        <section class="partnerships-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Strategic Partnerships</h2>
+                    <p class="section-description">
+                        We collaborate with leading quantum computing companies and research institutions 
+                        to accelerate quantum research and development.
+                    </p>
+                </div>
+                
+                <div class="partnerships-grid">
+                    <div class="partner-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="partner-logo">🏢</div>
+                        <h3>IBM Quantum Network</h3>
+                        <p>Direct access to IBM's most advanced quantum processors and cloud-based quantum computing platform.</p>
+                        <div class="partnership-benefits">
+                            <span>Hardware Access</span>
+                            <span>Research Collaboration</span>
+                            <span>Educational Resources</span>
+                        </div>
+                    </div>
+                    
+                    <div class="partner-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="partner-logo">🌐</div>
+                        <h3>Google Quantum Research</h3>
+                        <p>Joint research initiatives on quantum supremacy, error correction, and near-term quantum applications.</p>
+                        <div class="partnership-benefits">
+                            <span>Cirq Framework</span>
+                            <span>Quantum Supremacy</span>
+                            <span>Algorithm Development</span>
+                        </div>
+                    </div>
+                    
+                    <div class="partner-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="partner-logo">❄️</div>
+                        <h3>Rigetti Computing</h3>
+                        <p>Collaboration on quantum cloud computing platforms and hybrid quantum-classical algorithms.</p>
+                        <div class="partnership-benefits">
+                            <span>Forest SDK</span>
+                            <span>Hybrid Algorithms</span>
+                            <span>Cloud Access</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Navigation -->
+        <section class="research-navigation">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Explore Other Research Areas</h2>
+                <div class="research-nav-grid">
+                    <a href="machine-learning.html" class="research-nav-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="nav-icon">🧠</div>
+                        <h3>Machine Learning</h3>
+                        <p>Advanced algorithms and neural networks</p>
+                    </a>
+                    
+                    <a href="big-data-analytics.html" class="research-nav-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="nav-icon">📊</div>
+                        <h3>Big Data Analytics</h3>
+                        <p>Scalable systems for processing massive datasets</p>
+                    </a>
+                    
+                    <a href="natural-language-processing.html" class="research-nav-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="nav-icon">🗣️</div>
+                        <h3>Natural Language Processing</h3>
+                        <p>Advanced language models and text analysis</p>
+                    </a>
+                    
+                    <a href="computer-vision.html" class="research-nav-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="nav-icon">👁️</div>
+                        <h3>Computer Vision</h3>
+                        <p>Image recognition and visual understanding</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <svg viewBox="0 0 40 40" fill="none">
+                                <path d="M20 5L35 15V25L20 35L5 25V15L20 5Z" stroke="currentColor" stroke-width="2" fill="url(#footerLogoGradient)"/>
+                                <circle cx="20" cy="20" r="6" fill="currentColor"/>
+                                <defs>
+                                    <linearGradient id="footerLogoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#00d4ff"/>
+                                        <stop offset="100%" stop-color="#9333ea"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <span>ThinkBit<span class="edge">Edge</span></span>
+                    </div>
+                    <p>Pioneering the future of AI and data engineering through innovative research and world-class education.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="GitHub">💻</a>
+                        <a href="#" aria-label="YouTube">📺</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Research</h4>
+                    <ul>
+                        <li><a href="machine-learning.html">Machine Learning</a></li>
+                        <li><a href="big-data-analytics.html">Big Data Analytics</a></li>
+                        <li><a href="natural-language-processing.html">Natural Language Processing</a></li>
+                        <li><a href="computer-vision.html">Computer Vision</a></li>
+                        <li><a href="quantum-computing.html">Quantum Computing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Publications</a></li>
+                        <li><a href="#">Datasets</a></li>
+                        <li><a href="#">Open Source Tools</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">API Access</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="../index.html#contact">Get In Touch</a></li>
+                        <li><a href="mailto:research@thinkbitedge.com">research@thinkbitedge.com</a></li>
+                        <li><a href="tel:+12045550123">+1 (204) 555-0123</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2025 ThinkBit Edge Corp. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
