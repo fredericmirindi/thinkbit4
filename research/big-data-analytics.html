@@ -33,10 +33,642 @@
     <meta property="og:image" content="https://fredericmirindi.github.io/thinkbit4/assets/images/bigdata-research.jpg">
 </head>
 <body>
-    <!-- Navigation remains the same -->
-    <!-- Main Content remains the same -->
-    <!-- Footer remains the same -->
-    <!-- Scripts remain the same -->
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 40 40" fill="none">
+                        <path d="M20 5L35 15V25L20 35L5 25V15L20 5Z" stroke="currentColor" stroke-width="2" fill="url(#logoGradient)"/>
+                        <circle cx="20" cy="20" r="6" fill="currentColor"/>
+                        <defs>
+                            <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#00d4ff"/>
+                                <stop offset="100%" stop-color="#9333ea"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <a href="../index.html" class="logo-text">ThinkBit<span class="edge">Edge</span></a>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../index.html#about" class="nav-link">About</a>
+                <a href="../index.html#research" class="nav-link active">Research</a>
+                <a href="../index.html#ai-lab" class="nav-link">AI Lab</a>
+                <a href="../index.html#data-center" class="nav-link">Data Center</a>
+                <a href="../index.html#team" class="nav-link">Team</a>
+                <a href="../index.html#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+                </button>
+                <button class="cta-button" onclick="location.href='../index.html#contact'">Get Started</button>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="research-hero">
+            <div class="container">
+                <nav class="breadcrumb" data-aos="fade-up">
+                    <a href="../index.html">Home</a>
+                    <span>/</span>
+                    <a href="../index.html#research">Research</a>
+                    <span>/</span>
+                    <span>Big Data Analytics</span>
+                </nav>
+                
+                <div class="research-hero-content">
+                    <div class="hero-badge" data-aos="fade-up">
+                        <span class="badge-icon">📊</span>
+                        <span>Advanced Big Data Analytics Research</span>
+                    </div>
+                    
+                    <h1 class="research-title" data-aos="fade-up" data-aos-delay="100">
+                        Big Data Analytics
+                        <span class="gradient-text">Research Lab</span>
+                    </h1>
+                    
+                    <p class="research-description" data-aos="fade-up" data-aos-delay="200">
+                        Our Big Data Analytics research lab focuses on developing scalable systems and algorithms 
+                        for processing massive datasets. We advance distributed computing, real-time analytics, 
+                        and data mining techniques to extract meaningful insights from petabytes of structured 
+                        and unstructured data across diverse domains.
+                    </p>
+                    
+                    <div class="research-stats" data-aos="fade-up" data-aos-delay="300">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="500">0</div>
+                            <div class="stat-label">TB Data Processed Daily</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="18">0</div>
+                            <div class="stat-label">Active Projects</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="35">0</div>
+                            <div class="stat-label">Research Papers</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="8">0</div>
+                            <div class="stat-label">Industry Partners</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Areas -->
+        <section class="research-areas-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Research Focus Areas</h2>
+                    <p class="section-description">
+                        Our big data analytics research encompasses distributed systems design, real-time processing 
+                        frameworks, and advanced data mining techniques for extracting insights from massive datasets.
+                    </p>
+                </div>
+                
+                <div class="research-grid">
+                    <div class="research-area-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="area-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>
+                                <polyline points="3.27,6.96 12,12.01 20.73,6.96"/>
+                                <line x1="12" y1="22.08" x2="12" y2="12"/>
+                            </svg>
+                        </div>
+                        <h3>Distributed Systems</h3>
+                        <p>Advanced architectures for horizontally scalable data processing across clusters of commodity hardware, focusing on fault tolerance and data consistency.</p>
+                        <div class="area-features">
+                            <span>Apache Hadoop Ecosystem</span>
+                            <span>Apache Spark Optimization</span>
+                            <span>Distributed File Systems</span>
+                            <span>Fault-Tolerant Computing</span>
+                        </div>
+                    </div>
+                    
+                    <div class="research-area-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="area-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                            </svg>
+                        </div>
+                        <h3>Real-Time Analytics</h3>
+                        <p>Low-latency data processing systems that enable instant insights from streaming data sources, supporting real-time decision making at scale.</p>
+                        <div class="area-features">
+                            <span>Apache Kafka Streaming</span>
+                            <span>Apache Flink Processing</span>
+                            <span>Event-Driven Architecture</span>
+                            <span>Complex Event Processing</span>
+                        </div>
+                    </div>
+                    
+                    <div class="research-area-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="area-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <h3>Data Mining & Pattern Discovery</h3>
+                        <p>Scalable algorithms for extracting meaningful patterns and knowledge from massive datasets using machine learning and statistical methods.</p>
+                        <div class="area-features">
+                            <span>Clustering Algorithms</span>
+                            <span>Association Rule Mining</span>
+                            <span>Anomaly Detection</span>
+                            <span>Predictive Analytics</span>
+                        </div>
+                    </div>
+                    
+                    <div class="research-area-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="area-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                <line x1="16" y1="2" x2="16" y2="6"/>
+                                <line x1="8" y1="2" x2="8" y2="6"/>
+                                <line x1="3" y1="10" x2="21" y2="10"/>
+                                <path d="m9 16 2 2 4-4"/>
+                            </svg>
+                        </div>
+                        <h3>Data Lake Architecture</h3>
+                        <p>Flexible storage architectures that accommodate structured, semi-structured, and unstructured data with advanced governance and metadata management.</p>
+                        <div class="area-features">
+                            <span>Multi-format Storage</span>
+                            <span>Data Governance</span>
+                            <span>Schema Evolution</span>
+                            <span>Cloud-Native Solutions</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Current Projects -->
+        <section class="projects-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Current Research Projects</h2>
+                    <p class="section-description">
+                        Explore our ongoing big data analytics research initiatives that are advancing the state 
+                        of the art in large-scale data processing and analysis.
+                    </p>
+                </div>
+                
+                <div class="projects-grid">
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-status active">Active</div>
+                        <div class="project-header">
+                            <h3>Adaptive Stream Processing Framework</h3>
+                            <div class="project-funding">$3.2M NSERC Grant</div>
+                        </div>
+                        <p class="project-description">
+                            Developing intelligent stream processing systems that automatically adapt to changing 
+                            data patterns and workload characteristics for optimal performance and resource utilization.
+                        </p>
+                        <div class="project-details">
+                            <div class="detail-item">
+                                <strong>Duration:</strong> 2023-2027
+                            </div>
+                            <div class="detail-item">
+                                <strong>Team Size:</strong> 12 researchers
+                            </div>
+                            <div class="detail-item">
+                                <strong>Publications:</strong> 15 papers
+                            </div>
+                        </div>
+                        <div class="project-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 68%"></div>
+                            </div>
+                            <span>68% Complete</span>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">Stream Processing</span>
+                            <span class="tag">Adaptive Systems</span>
+                            <span class="tag">Resource Optimization</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-status research">Research</div>
+                        <div class="project-header">
+                            <h3>Edge-Cloud Data Analytics Pipeline</h3>
+                            <div class="project-funding">$2.1M Industry Collaboration</div>
+                        </div>
+                        <p class="project-description">
+                            Creating hybrid edge-cloud architectures for processing IoT data streams with 
+                            intelligent data placement and adaptive computation offloading strategies.
+                        </p>
+                        <div class="project-details">
+                            <div class="detail-item">
+                                <strong>Duration:</strong> 2024-2027
+                            </div>
+                            <div class="detail-item">
+                                <strong>Team Size:</strong> 9 researchers
+                            </div>
+                            <div class="detail-item">
+                                <strong>Publications:</strong> 11 papers
+                            </div>
+                        </div>
+                        <div class="project-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 42%"></div>
+                            </div>
+                            <span>42% Complete</span>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">Edge Computing</span>
+                            <span class="tag">IoT Analytics</span>
+                            <span class="tag">Hybrid Cloud</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-status planning">Planning</div>
+                        <div class="project-header">
+                            <h3>Privacy-Preserving Analytics Platform</h3>
+                            <div class="project-funding">$4.5M CFI Infrastructure</div>
+                        </div>
+                        <p class="project-description">
+                            Building federated analytics systems that enable collaborative data analysis across 
+                            organizations while preserving data privacy and compliance with regulations.
+                        </p>
+                        <div class="project-details">
+                            <div class="detail-item">
+                                <strong>Duration:</strong> 2025-2029
+                            </div>
+                            <div class="detail-item">
+                                <strong>Team Size:</strong> 14 researchers</div>
+                            <div class="detail-item">
+                                <strong>Publications:</strong> 4 papers
+                            </div>
+                        </div>
+                        <div class="project-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 18%"></div>
+                            </div>
+                            <span>18% Complete</span>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">Privacy Preservation</span>
+                            <span class="tag">Federated Analytics</span>
+                            <span class="tag">Differential Privacy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technology Stack -->
+        <section class="technology-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Technology Stack & Infrastructure</h2>
+                    <p class="section-description">
+                        Our research leverages cutting-edge technologies and frameworks for scalable 
+                        big data processing and analytics.
+                    </p>
+                </div>
+                
+                <div class="tech-categories">
+                    <div class="tech-category" data-aos="fade-up" data-aos-delay="100">
+                        <h3>Distributed Computing</h3>
+                        <div class="tech-items">
+                            <div class="tech-item">
+                                <div class="tech-icon">⚡</div>
+                                <div class="tech-info">
+                                    <h4>Apache Spark</h4>
+                                    <p>Unified analytics engine for large-scale data processing with in-memory computing capabilities</p>
+                                </div>
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-icon">🐘</div>
+                                <div class="tech-info">
+                                    <h4>Apache Hadoop</h4>
+                                    <p>Distributed storage and processing framework with HDFS and MapReduce paradigms</p>
+                                </div>
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-icon">🌊</div>
+                                <div class="tech-info">
+                                    <h4>Apache Flink</h4>
+                                    <p>Stream processing framework for high-throughput, low-latency data analysis</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-category" data-aos="fade-up" data-aos-delay="200">
+                        <h3>Data Storage & Management</h3>
+                        <div class="tech-items">
+                            <div class="tech-item">
+                                <div class="tech-icon">🗄️</div>
+                                <div class="tech-info">
+                                    <h4>NoSQL Databases</h4>
+                                    <p>MongoDB, Cassandra, and HBase for flexible, scalable data storage solutions</p>
+                                </div>
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-icon">🏗️</div>
+                                <div class="tech-info">
+                                    <h4>Data Lakes</h4>
+                                    <p>AWS S3, Azure Data Lake, and Delta Lake for multi-format data repositories</p>
+                                </div>
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-icon">📊</div>
+                                <div class="tech-info">
+                                    <h4>Analytics Databases</h4>
+                                    <p>ClickHouse, Apache Druid, and Pinot for real-time analytical processing</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-category" data-aos="fade-up" data-aos-delay="300">
+                        <h3>Streaming & Real-Time</h3>
+                        <div class="tech-items">
+                            <div class="tech-item">
+                                <div class="tech-icon">🚀</div>
+                                <div class="tech-info">
+                                    <h4>Apache Kafka</h4>
+                                    <p>Distributed event streaming platform for high-throughput data pipelines</p>
+                                </div>
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-icon">⚡</div>
+                                <div class="tech-info">
+                                    <h4>Apache Storm</h4>
+                                    <p>Real-time computation system for processing unbounded streams of data</p>
+                                </div>
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-icon">☁️</div>
+                                <div class="tech-info">
+                                    <h4>Cloud Streaming</h4>
+                                    <p>AWS Kinesis, Google Dataflow, and Azure Stream Analytics</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications & Resources -->
+        <section class="publications-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Recent Publications & Resources</h2>
+                    <p class="section-description">
+                        Access our latest research findings, publications, and open-source contributions to the 
+                        big data analytics community.
+                    </p>
+                </div>
+                
+                <div class="publications-grid">
+                    <div class="publication-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="publication-type">Journal Paper</div>
+                        <h3>"Scalable Real-Time Analytics for IoT Data Streams"</h3>
+                        <p class="publication-authors">Zhang, L., Williams, R., Kumar, S., Thompson, A.</p>
+                        <p class="publication-venue">IEEE Transactions on Big Data, 2024</p>
+                        <div class="publication-metrics">
+                            <span class="metric">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M8 17l4 4 4-4m-4-5v9"/>
+                                    <path d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"/>
+                                </svg>
+                                312 Downloads
+                            </span>
+                            <span class="metric">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"/>
+                                    <rect x="8" y="2" width="8" height="4" rx="1" ry="1"/>
+                                </svg>
+                                28 Citations
+                            </span>
+                        </div>
+                        <div class="publication-tags">
+                            <span class="tag">Real-time Analytics</span>
+                            <span class="tag">IoT</span>
+                        </div>
+                    </div>
+                    
+                    <div class="publication-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="publication-type">Conference Paper</div>
+                        <h3>"Adaptive Load Balancing in Distributed Stream Processing"</h3>
+                        <p class="publication-authors">Kumar, S., Zhang, L., Anderson, M.</p>
+                        <p class="publication-venue">VLDB 2024</p>
+                        <div class="publication-metrics">
+                            <span class="metric">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M8 17l4 4 4-4m-4-5v9"/>
+                                    <path d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"/>
+                                </svg>
+                                267 Downloads
+                            </span>
+                            <span class="metric">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"/>
+                                    <rect x="8" y="2" width="8" height="4" rx="1" ry="1"/>
+                                </svg>
+                                41 Citations
+                            </span>
+                        </div>
+                        <div class="publication-tags">
+                            <span class="tag">Stream Processing</span>
+                            <span class="tag">Load Balancing</span>
+                        </div>
+                    </div>
+                    
+                    <div class="publication-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="publication-type">Open Source</div>
+                        <h3>"BigDataFlow: Scalable Analytics Pipeline Framework"</h3>
+                        <p class="publication-authors">ThinkBit Edge Research Team</p>
+                        <p class="publication-venue">GitHub Repository</p>
+                        <div class="publication-metrics">
+                            <span class="metric">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                                </svg>
+                                2.1k Stars
+                            </span>
+                            <span class="metric">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"/>
+                                    <rect x="8" y="2" width="8" height="4" rx="1" ry="1"/>
+                                </svg>
+                                486 Forks
+                            </span>
+                        </div>
+                        <div class="publication-tags">
+                            <span class="tag">Open Source</span>
+                            <span class="tag">Data Pipeline</span>
+                        </div>
+                    </div>
+                    
+                    <div class="publication-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="publication-type">Workshop Paper</div>
+                        <h3>"Privacy-Preserving Distributed Analytics in Healthcare"</h3>
+                        <p class="publication-authors">Williams, R., Thompson, A., Kumar, S.</p>
+                        <p class="publication-venue">BigData Workshop 2024</p>
+                        <div class="publication-metrics">
+                            <span class="metric">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M8 17l4 4 4-4m-4-5v9"/>
+                                    <path d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"/>
+                                </svg>
+                                156 Downloads
+                            </span>
+                            <span class="metric">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"/>
+                                    <rect x="8" y="2" width="8" height="4" rx="1" ry="1"/>
+                                </svg>
+                                19 Citations
+                            </span>
+                        </div>
+                        <div class="publication-tags">
+                            <span class="tag">Privacy</span>
+                            <span class="tag">Healthcare Analytics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Navigation -->
+        <section class="research-navigation">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Explore Other Research Areas</h2>
+                <div class="research-nav-grid">
+                    <a href="machine-learning.html" class="research-nav-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="nav-icon">🧠</div>
+                        <h3>Machine Learning</h3>
+                        <p>Advanced algorithms for pattern recognition and automation</p>
+                    </a>
+                    
+                    <a href="natural-language-processing.html" class="research-nav-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="nav-icon">🗣️</div>
+                        <h3>Natural Language Processing</h3>
+                        <p>Advanced language models and text analysis</p>
+                    </a>
+                    
+                    <a href="computer-vision.html" class="research-nav-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="nav-icon">👁️</div>
+                        <h3>Computer Vision</h3>
+                        <p>Image recognition and visual understanding</p>
+                    </a>
+                    
+                    <a href="quantum-computing.html" class="research-nav-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="nav-icon">⚛️</div>
+                        <h3>Quantum Computing</h3>
+                        <p>Next-generation computing paradigms</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <svg viewBox="0 0 40 40" fill="none">
+                                <path d="M20 5L35 15V25L20 35L5 25V15L20 5Z" stroke="currentColor" stroke-width="2" fill="url(#footerLogoGradient)"/>
+                                <circle cx="20" cy="20" r="6" fill="currentColor"/>
+                                <defs>
+                                    <linearGradient id="footerLogoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#00d4ff"/>
+                                        <stop offset="100%" stop-color="#9333ea"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <span>ThinkBit<span class="edge">Edge</span></span>
+                    </div>
+                    <p>Pioneering the future of AI and data engineering through innovative research and world-class education.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="GitHub">💻</a>
+                        <a href="#" aria-label="YouTube">📺</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Research</h4>
+                    <ul>
+                        <li><a href="machine-learning.html">Machine Learning</a></li>
+                        <li><a href="big-data-analytics.html">Big Data Analytics</a></li>
+                        <li><a href="natural-language-processing.html">Natural Language Processing</a></li>
+                        <li><a href="computer-vision.html">Computer Vision</a></li>
+                        <li><a href="quantum-computing.html">Quantum Computing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Publications</a></li>
+                        <li><a href="#">Datasets</a></li>
+                        <li><a href="#">Open Source Tools</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">API Access</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="../index.html#contact">Get In Touch</a></li>
+                        <li><a href="mailto:research@thinkbitedge.com">research@thinkbitedge.com</a></li>
+                        <li><a href="tel:+12045550123">+1 (204) 555-0123</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2025 ThinkBit Edge Corp. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../assets/js/main.js"></script>
 </body>
